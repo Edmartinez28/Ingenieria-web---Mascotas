@@ -1,0 +1,252 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: rgba(215, 211, 211, 0.3);
+	font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+	width: 95%;
+	max-width: 1124px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, auto);
+
+	grid-template-areas: "header  header"
+						 "slider slider"
+						 "titulo titulo"
+						 "adopta1 adopta2"
+						 "doctor doctor"	
+						 "sponsor sponsor"
+						 "footer footer";	
+}
+
+
+/*  --------------------------------------------   */
+/*                     HEADER                      */
+/*  --------------------------------------------   */
+
+.contenedor .cabeceraPrincipal{
+	grid-area: header;
+	background-color: #B5EF8A;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .cabeceraPrincipal .logotipo{
+	padding: 10 px 40 px;
+}
+
+.contenedor .cabeceraPrincipal nav{
+	display: flex;
+	align-items: center;
+}
+
+.contenedor .cabeceraPrincipal nav a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #65524D;
+}
+
+.contenedor .cabeceraPrincipal nav a:hover{ /* Cuando el cursor esta encima de la etiqueta*/
+	text-decoration: none;
+	padding: 0 20px;
+	background-color: #65524D;
+	color: #fff;
+}
+
+/*  --------------------------------------------   */
+/*                     SLIDER                      */
+/*  --------------------------------------------   */
+
+.contenedor .sliderPrincipal{
+	grid-area: slider;
+	background-color: #333;
+}
+
+.contenedor .sliderPrincipal h2{
+	color: black;
+	text-align: center;
+}
+
+.contenedor .sliderPrincipal button{
+	background-color: #B5EF8A;
+	border-color: #B5EF8A;
+	color: #605B5B;
+}
+
+.contenedor .sliderPrincipal .cuadro{
+	position: absolute;
+	background-color: #fff;
+	color: black;
+	opacity: 50%;
+	width: 55%;
+	height: 20%;
+	margin: 450px 50px 20px 50px;
+}
+
+.contenedor .sliderPrincipal img{
+	width: 100%;
+}
+
+.contenedor .titulo {
+	grid-area: titulo;
+	background-color: #fff;
+	text-align: center;
+}
+
+.contenedor .titulo h2{
+	color: #9C9B9B;
+	font-size: 40px;
+	font-weight: 100;
+	padding: 30px 0;
+}
+
+.contenedor .adopcion1{
+	grid-area: adopta1;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .adopcion1 img{
+	width: 200px;
+}
+
+.contenedor .adopcion1 .cardog h3{
+	font-size: 25px;
+	color: #817E9f;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+.contenedor .adopcion1 .cardog p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
+
+.contenedor .adopcion1 .cardog button{
+	padding: 5px 10px;
+	background-color: #B5EF8A;
+	border-color: #B5EF8A;
+	color: #605B5B;
+	margin: 10px  20px 10px 180px;
+	border-radius: 6px;
+}
+
+.contenedor .adopcion2{
+	grid-area: adopta2;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .adopcion2 img{
+	width: 200px;
+}
+
+.contenedor .adopcion2 .cardog2 h3{
+	font-size: 25px;
+	color: #817E9f;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+.contenedor .adopcion2 .cardog2 p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
+
+.contenedor .adopcion2 .cardog2 button{
+	padding: 5px 10px;
+	background-color: #B5EF8A;
+	border-color: #B5EF8A;
+	color: #605B5B;
+	margin: 10px  20px 10px 180px;
+	border-radius: 6px;
+}
+
+.contenedor .doctores{
+	grid-area: doctor;
+	background-color: #fff;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "doc1 doc2 doc3 doc4"
+	
+}
+
+.contenedor .doctores .doctor1 img{
+	grid-area: doc1;
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor .doctores .doctor2 img{
+	grid-area: doc2;
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor .doctores .doctor3 img{
+	grid-area: doc3;
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor .doctores .doctor4 img{
+	grid-area: doc4;
+	width: 100%;
+	height: 100%;
+}
+.contenedor .sponsor{
+	grid-area: sponsor;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 250px;
+}
+
+.contenedor .sponsor .logopet {
+	width: auto;
+	height: 100px;
+	margin: 75px 0 75px 200px;
+}
+
+/*  --------------------------------------------   */
+/*                     FOOTER                      */
+/*  --------------------------------------------   */
+
+.contenedor .piePagina{
+	grid-area: footer;
+	background-color: #1B1B1B;
+	color: #A3A3A3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .piePagina .derechos{
+	padding: 30px 50px;
+}
+
+.contenedor .piePagina .redesSociales{
+	display: flex;
+	align-items: center;
+}
+
+.contenedor .piePagina .redesSociales a {
+	color: #D7F171;
+	text-decoration: none;
+	padding: 0 15px;
+	font-size: 35px;
+}
+
+.contenedor .piePagina .redesSociales a:hover{
+	color: #fff;
+}
